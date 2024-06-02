@@ -136,10 +136,9 @@ const styles = {
     alertColumn: {
         width: '100%',
         display: 'flex',
-        justifyContent: 'space-around',
-        flexWrap: 'wrap',
+        flexDirection: 'column', // Change to column layout for smaller screens
+        alignItems: 'center',
         margin: '10px 0',
-        alignItems: 'stretch', // Added align-items property
     },
     alertCard: {
         backgroundColor: '#1e1e1e',
@@ -147,10 +146,8 @@ const styles = {
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
         marginBottom: '20px',
-        flex: '1 1 220px', // Reduced flex basis from 300px to 250px
-        margin: '10px',
-        minWidth: '200px', // Reduced minWidth from 300px to 250px
-        maxWidth: '40%', // Reduced maxWidth from 45% to 40%
+        width: '90%', // Adjust width for smaller screens
+        maxWidth: '400px', // Limit maximum width for smaller screens
     },
     cardTitle: {
         marginBottom: '10px',
