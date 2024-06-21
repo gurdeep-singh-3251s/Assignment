@@ -133,7 +133,7 @@ const JobApplicationForm = () => {
             {skills.map((skill) => (
               <label key={skill} className="inline-flex items-center">
                 <input type="checkbox" name="additionalSkills" value={skill} checked={formData.additionalSkills.includes(skill)} onChange={handleInputChange} className="h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                <span className="ml-2">{skill}</span>
+                <span className="ml-2 p-2">{skill}</span>
               </label>
             ))}
           </div>
